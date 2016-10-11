@@ -1,0 +1,15 @@
+#Settings
+title: Soft Interface
+description: Where awesome design starts
+email: zelek.hubert@gmail.com
+logo: 'logo.svg'
+
+bg-img: 'hero-bg.jpg'
+avatar: 'travitar.jpg'
+
+#Menu
+menu:
+- {name: About Me, url: '#about'}
+- {name: Work, url: '#work'}
+- {name: Clients, url: '#clients'}
+- {name: Contact, url: '#contact'}
