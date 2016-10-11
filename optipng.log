@@ -1,0 +1,8 @@
+** Warning: The option -log is deprecated; use shell redirection
+
+** Processing: *.png
+Error: Can't open the input file
+
+** Status report
+1 file(s) have been processed.
+1 error(s) have been encountered.
