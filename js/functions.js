@@ -13,11 +13,11 @@ function slider(){
       i++;
 
       if( i<4 ){
-        $('.slider-picture img').attr('src', '../img/hero'+i+'.png');
+        $('.slider-picture').css('background-image', 'url(../img/hero'+i+'.png)');
         console.log(i);
       }else{
         i = 1;
-        $('.slider-picture img').attr('src', '../img/hero'+i+'.png');
+        $('.slider-picture').css('background-image', 'url(../img/hero'+i+'.png)');
         console.log(i);
       }
     }else{
@@ -25,9 +25,9 @@ function slider(){
       console.log(i);
       if( i<1 ){
         i = 3;
-        $('.slider-picture img').attr('src', '../img/hero'+i+'.png');
+        $('.slider-picture').css('background-image', 'url(../img/hero'+i+'.png)');
       }else{
-        $('.slider-picture img').attr('src', '../img/hero'+i+'.png');
+        $('.slider-picture').css('background-image', 'url(../img/hero'+i+'.png)');
       }
     }
 
