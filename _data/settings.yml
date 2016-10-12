@@ -24,3 +24,12 @@ work:
 - {name: Paper bag, category: 'Branding', thumbnail: 'work-6'}
 - {name: Ceramic bottle, category: 'Branding', thumbnail: 'work-7'}
 - {name: Cool shirt, category: 'Brandning', thumbnail: 'work-8'}
+
+#Services
+services:
+- {name: Timing, icon: 'stopwatch', content: 'Our web design team will spend time with our digital marketing team to ensure the core principles of effective websites.'}
+- {name: Presentation, icon: 'presentation', content: 'Our web design team will spend time with our digital marketing team to ensure the core principles of effective websites.'}
+- {name: Accurate, icon: 'target', content: 'Our web design team will spend time with our digital marketing team to ensure the core principles of effective websites.'}
+- {name: Design, icon: 'stack-exchange', content: 'Our web design team will spend time with our digital marketing team to ensure the core principles of effective websites.'}
+- {name: Developer, icon: 'browser', content: 'Our web design team will spend time with our digital marketing team to ensure the core principles of effective websites.'}
+- {name: Production, icon: 'tools-2', content: 'Our web design team will spend time with our digital marketing team to ensure the core principles of effective websites.'}

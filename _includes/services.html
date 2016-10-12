@@ -1,0 +1,17 @@
+<section id="services" class="section">
+  <div class="section-separator">
+    <hr class="section-bar" />
+    <h3>Services</h3>
+  </div>
+  <div class="service-group">
+    {% for item in site.data.settings.services %}
+    <div class="service-unit">
+      <div class="bar"></div>
+      <div class="icon-{{item.icon}}"></div>
+      <p class="service-content">
+        <span>{{item.name}}</span>{{item.content}}
+      </p>
+    </div>
+    {% endfor %}
+  </div>
+</section>
