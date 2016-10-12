@@ -1,5 +1,13 @@
-$(function(){
+$(document).ready(function(){
   slider();
+  $('.owl-carousel').owlCarousel({
+    items:4,
+    loop:true,
+    nav:true,
+    autoplay:true,
+    autoplayTimeout:3000,
+
+  });
 });
 
 function slider(){
