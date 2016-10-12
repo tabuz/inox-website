@@ -1,4 +1,6 @@
 .section
+  margin: 0 auto
+  max-width: 1100px
 
   .section-separator
     @extend %section-separator
@@ -8,3 +10,68 @@
 
     .section-bar
       @extend %section-bar
+
+  .section-about
+    +clearfix
+    +display(flex)
+
+    .about-content
+      margin-left: 30px
+      float: right
+
+      img
+
+
+      h4
+        margin: 0 0 25px 0
+        text-transform: uppercase
+        font:
+          size: 20px
+          weight: 700
+        line-height: 20px
+        color: $accent
+
+      p
+        font:
+          size: 12px
+          weight: 400
+        color: $gray-color
+        line-height: 1
+        margin-bottom: 55px
+
+      .about-icons
+        position: relative
+        +display(flex)
+        +justify-content(space-between)
+        +align-items(center)
+
+        .group
+          +display(flex)
+          +flex-direction(column)
+          +align-items(center)
+
+        [class^="icon-"]
+          box-sizing: border-box
+          padding-top: 13px
+          text-align: center
+          font-size: 38px
+          color: white
+          +size(65px)
+          box-shadow: 0px 0px 0px 10px white
+          background: $accent
+          margin-bottom: 15px
+
+        span
+          display: table
+          margin: 0 auto
+          text-align: center
+          text-transform: uppercase
+          font-size: 12px
+          color: $gray-color
+
+        .bar
+          width: 430px
+          height: 1px
+          background: $accent
+          +position(absolute, 32px 0 0 0)
+          z-index: -2
