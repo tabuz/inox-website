@@ -16,7 +16,7 @@
 
   .work-content
     +display(flex)
-    +justify-content(space-around)
+    +justify-content(space-between)
     +align-items(center)
     +flex-wrap(wrap)
     +flex-direction(row)
@@ -74,3 +74,44 @@
           opacity: 0.9
         .work-caption
           opacity: 1
+
+  @media screen and(max-width: 1025px)
+    .work-content
+      .work-unit
+        margin: 0 0 0 0
+        position: relative
+
+        .work-group
+          opacity: 1
+          +transition(all 0.3s ease-in-out)
+
+        .work-caption
+          +position(absolute, 250px 0 0 0)
+          opacity: 1
+          padding: 35px
+          z-index: 5
+
+          .work-header
+            color: white
+            margin: 0 0 0 0
+            text-transform: uppercase
+            font-size: 16px
+            font-weight: 700
+
+          .work-category
+            margin: 0
+            font-size: 12px
+            font-style: italic
+            color: white
+            text-align: left
+            margin-bottom: 40px
+
+          .work-btn
+            display: none
+
+        .work-mask
+          box-sizing: border-box
+          background: transparentize($work-hover, .3)
+          +position(absolute, 250px 0 0 0)
+          opacity: 1
+          border: 13px solid rgba(255, 255, 255, 0.8)

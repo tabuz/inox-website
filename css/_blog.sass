@@ -1,0 +1,99 @@
+.blog-container
+  max-width: 100%
+  margin: 0 auto
+  +display(flex)
+  +flex-direction(row)
+  +justify-content(space-around)
+  +flex-wrap(wrap)
+
+  .blog-unit
+    max-width: 530px
+    height: auto
+    margin: 0 20px 20px 0
+    position: relative
+    +transition(all 0.4s ease-in)
+
+    img
+      max-width: 100%
+
+    .blog-mask
+      +position(absolute, 0 0 0 0)
+      background-color: transparentize($team-hover, .2)
+      opacity: 0
+      +transition(all 0.4s ease-in)
+
+
+    .blog-caption
+      +position(absolute, 0 0 0 0)
+      opacity: 0
+      margin-top: 150px
+      padding-left: 75px
+      +transition(all 0.4s ease-in)
+
+      h3
+        margin: 0
+        padding-bottom: 5px
+        text-transform: uppercase
+        font:
+          size: 14px
+          weight: 700
+        color: white
+      p
+        display: block
+        max-width: 280px
+        font-size: 10px
+        padding-top: 5px
+        color: $accent-light
+        margin-bottom: 35px
+
+      span
+        display: block
+        width: 43px
+        height: 3px
+        background: white
+        margin-bottom: 5px
+      a
+        display: inline-block
+        font-size: 10px
+        +position(absolute, null 80px 25px null)
+        text-transform: uppercase
+        padding: 10px 20px
+        border: 1px solid white
+
+    &:hover
+      .blog-mask, .blog-caption
+        opacity: 1
+
+@media screen and (max-width: 1025px)
+  .blog-container
+    max-width: 100%
+    margin: 0 auto
+    +display(flex)
+    +flex-direction(row)
+    +justify-content(space-around)
+    +flex-wrap(wrap)
+
+    .blog-unit
+      max-width: 500px
+      height: auto
+      position: relative
+      margin: 0 0 20px 0
+
+    @media screen and (max-width: 500px)
+      .blog-unit
+        img
+          max-width: 100%
+
+        .blog-mask
+          +position(absolute, 0 0 0 0)
+          background-color: transparentize($team-hover, .2)
+          opacity: 1
+          +transition(all 0.2s ease-in)
+
+        .blog-caption
+          margin: 0
+          +position(absolute, 0 0 0 0)
+          padding: 30px
+
+          a
+            padding: 5px 10px
