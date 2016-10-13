@@ -33,3 +33,13 @@ services:
 - {name: Design, icon: 'stack-exchange', content: 'Our web design team will spend time with our digital marketing team to ensure the core principles of effective websites.'}
 - {name: Developer, icon: 'browser', content: 'Our web design team will spend time with our digital marketing team to ensure the core principles of effective websites.'}
 - {name: Production, icon: 'tools-2', content: 'Our web design team will spend time with our digital marketing team to ensure the core principles of effective websites.'}
+
+#Team
+team:
+- {name: Victoria Natalio, title: 'CEO', img: 'team-1'}
+- {name: Jhon Smith, title: 'Vice President', img: 'team-2'}
+- {name: Eva Snow, title: 'Marketing Team', img: 'team-3'}
+- {name: Elton Blub, title: 'Accountant', img: 'team-4'}
+- {name: Jin Xui Hai, title: 'Programmer', img: 'team-5'}
+- {name: Steve Morrison, title: 'Programmer', img: 'team-6'}
+- {name: Xiao Mi, title: 'UI Design', img: 'team-7'}

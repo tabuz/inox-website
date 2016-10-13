@@ -1,0 +1,127 @@
+.team-container
+  +display(flex)
+  +flex-wrap(wrap)
+  +justify-content(space-around)
+  text-align: left
+
+  .team-container::last-child
+    .team-mask
+      display:none
+
+  .team-unit
+    +flex-basis(250px)
+    width: 250px
+    height: 470px
+    position: relative
+    margin: 10px
+    +transition
+
+    .team-mask
+      +position(absolute, 0 0 0 0)
+      background-color: transparentize($team-hover, .2)
+      opacity: 0
+
+    &:hover
+      .team-mask
+        opacity: 1
+
+      .team-content
+        padding: 30px
+        margin-top: 280px
+
+        .team-name
+          margin: 0
+          padding-bottom: 5px
+          text-transform: uppercase
+          font:
+            size: 14px
+            weight: 700
+          color: white
+
+        .bar
+          display: block
+          width: 43px
+          height: 3px
+          background: white
+          margin-bottom: 5px
+
+        .team-title
+          display: block
+          font-size: 12px
+          padding-top: 5px
+          color: $accent-light
+          margin-bottom: 60px
+
+        .team-icons
+          [class^="icon-"]
+            cursor: pointer
+            text-align: center
+            display: inline-block
+            +size(25px)
+            border: 1px solid white
+            border-radius: 50%
+            padding-top: 4px
+            color: white
+
+            &:hover
+              color: $accent
+              background: white
+
+  .team-join
+    .join-mask
+      +position(absolute, 0 0 0 0)
+      text-align: center
+    .join-btn
+      margin-top: 400px
+      font-size: 10px
+      display: inline-block
+      padding: 10px 30px
+      color: white
+      background-color: $accent
+      text-transform: uppercase
+      border: 1px solid $accent
+
+@media screen and (max-width: 500px)
+  .team-container
+    .team-unit
+      overflow: hidden
+      .team-mask
+        +position(absolute, 300px 0 0 0)
+        background-color: transparentize($team-hover, .2)
+        opacity: 1
+        .team-content
+          padding: 30px
+
+          .team-name
+            margin: 0
+            padding-bottom: 5px
+            text-transform: uppercase
+            font:
+              size: 14px
+              weight: 700
+            color: white
+
+          .bar
+            display: block
+            width: 43px
+            height: 3px
+            background: white
+            margin-bottom: 5px
+
+          .team-title
+            display: block
+            font-size: 12px
+            padding-top: 5px
+            color: $accent-light
+            margin-bottom: 30px
+
+          .team-icons
+            [class^="icon-"]
+              cursor: pointer
+              text-align: center
+              display: inline-block
+              +size(25px)
+              border: 1px solid white
+              border-radius: 50%
+              padding-top: 4px
+              color: white
