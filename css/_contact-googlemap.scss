@@ -1,0 +1,29 @@
+.google-maps {
+  position: relative;
+  padding-bottom: 30%;
+  margin-bottom: 100px; // This is the aspect ratio
+  height: 0;
+  overflow: hidden;
+    }
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  }
+#google-map {
+       height:380px;
+       width:1100px;
+   }
+   .gm-style-iw * {
+       display: block;
+       width: 100%;
+   }
+   .gm-style-iw h4, .gm-style-iw p {
+       margin: 0;
+       padding: 0;
+   }
+   .gm-style-iw a {
+       color: #4272db;
+   }
