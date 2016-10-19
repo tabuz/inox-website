@@ -16,20 +16,25 @@
 
   .work-content
     +display(flex)
-    +justify-content(space-between)
+    +justify-content(center)
     +align-items(center)
     +flex-wrap(wrap)
     +flex-direction(row)
 
     .work-unit
-      margin: 0 0 20px 0
+      +transition(all 0.3s ease-in-out)
+      height: 350px
+      margin: 0 20px 20px 0
+      overflow: hidden
       position: relative
+
 
       .work-group
         opacity: 0
         +transition(all 0.3s ease-in-out)
 
       .work-caption
+        +transition(all 0.3s ease-in-out)
         +position(absolute, 0 0 0 0)
         opacity: 0
         padding: 35px
@@ -64,7 +69,9 @@
         background: $work-hover
         +position(absolute, 0 0 0 0)
         opacity: 0
+        transform: translateY(0)
         border: 13px solid rgba(255, 255, 255, 0.8)
+        transition: all 0.3s
 
 
       &:hover
@@ -77,16 +84,18 @@
 
   @media screen and(max-width: 1025px)
     .work-content
+
       .work-unit
-        margin: 0 0 0 0
+        margin: 0 10px 10px 0
         position: relative
+        height: 100px
+        +align-self(flex-end)
 
         .work-group
           opacity: 1
-          +transition(all 0.3s ease-in-out)
 
         .work-caption
-          +position(absolute, 250px 0 0 0)
+          +position(absolute, 0 0 0 0)
           opacity: 1
           padding: 35px
           z-index: 5
@@ -109,9 +118,19 @@
           .work-btn
             display: none
 
+
         .work-mask
           box-sizing: border-box
           background: transparentize($work-hover, .3)
-          +position(absolute, 250px 0 0 0)
+          +position(absolute, 0 0 0 0)
           opacity: 1
           border: 13px solid rgba(255, 255, 255, 0.8)
+
+      .active
+        height: 350px
+
+        .work-caption
+          transform: translateY(250px)
+
+        .work-mask
+          transform: translateY(250px)

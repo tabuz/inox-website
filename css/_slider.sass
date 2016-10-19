@@ -1,6 +1,5 @@
 #carousel-slider
   background-color: $bgcolor
-  overflow: hidden
   max-height: 800px
 
 
@@ -18,14 +17,15 @@
   text-transform: uppercase
   bottom: 20%
 
+
   h1
     color: white
     font:
-      size: 54
+      size: 54px
       weight: 400
     line-height: 54px
     display: block
-    padding: 200px 0 84px 0
+
 
     span
       font:
@@ -41,6 +41,43 @@
     color: $accent
     background: white
 
-.carousel-control
-  &:hover
-    background-color: transparent
+.mobile-logo
+  +position(absolute, 3% null null 5%)
+  display: none
+
+@media screen and (max-width: 1100px)
+  .carousel-caption
+    bottom: 10%
+
+    h1
+      font-size: 44px
+      line-height: 44px
+
+      span
+        font-size: 28px
+        line-height: 20px
+
+    a
+      font-size: 10px
+      padding: 10px 20px
+
+@media screen and (max-width: 700px)
+  .carousel-caption
+    bottom: 10%
+
+    h1
+      font-size: 34px
+      line-height: 34px
+
+      span
+        font-size: 18px
+        line-height: 10px
+
+    a
+      font-size: 10px
+
+@media screen and (max-width: 500px)
+  .mobile-logo
+    display: block
+  header, .carousel-caption, .carousel-control
+    display: none
