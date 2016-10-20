@@ -3,7 +3,7 @@
 
 var lastId,
     topMenu = $("#nav"),
-    topMenuHeight = topMenu.outerHeight()+15,
+    topMenuHeight = topMenu.outerHeight()+70,
     // Wszystkie elementy listy
     menuItems = topMenu.find("a"),
     // Kotwice do pozycji menu

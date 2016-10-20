@@ -11,12 +11,10 @@
       height: auto
       z-index: -55
 
-
 .carousel-caption
   z-index: 3
   text-transform: uppercase
   bottom: 20%
-
 
   h1
     color: white
@@ -25,7 +23,6 @@
       weight: 400
     line-height: 54px
     display: block
-
 
     span
       font:
@@ -40,6 +37,11 @@
     padding: 15px 30px
     color: $accent
     background: white
+    transition: 300ms
+
+    &:hover
+      color: white
+      background: $accent
 
 .mobile-logo
   +position(absolute, 3% null null 5%)

@@ -10,17 +10,17 @@
     <li>Media</li>
     <li>Photography</li>
     <li>Print</li>
-    <li>Web Design</li>
+    <li>Web-Design</li>
   </ul>
   <div class="work-content">
     {% for item in site.data.settings.work %}
-    <div class="work-unit">
+    <div class="work-unit {{item.category}}">
       <img src="img/work/{{item.thumbnail}}.jpg" alt="Work picture" />
       <div class="work-group">
         <div class="work-caption">
           <h5 class="work-header">{{item.name}}</h5>
           <p class="work-category">{{item.category}}</p>
-          <a href="" class="work-btn">View work</a>
+          <a href="" class="work-btn">View work<span></span></a>
         </div>
         <div class="work-mask"></div>
       </div>

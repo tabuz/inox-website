@@ -6,6 +6,7 @@
     margin-bottom: 45px
 
     li
+      cursor: pointer
       font-size: 14px
       color: $gray-color
       display: inline-block
@@ -63,6 +64,17 @@
           text-transform: uppercase
           padding: 10px 17px
           border: 1px solid white
+          transition: 300ms
+
+          &:hover
+            border: 1px solid $accent
+
+          &:after, &:before
+            content: ""
+            width: 30px
+            height: 2px
+            background: white
+
 
       .work-mask
         box-sizing: border-box

@@ -18,12 +18,12 @@ menu:
 work:
 - {name: Tech Mock-up, category: 'Photography', thumbnail: 'work-1'}
 - {name: Heja stockholm!, category: 'Marketing', thumbnail: 'work-2'}
-- {name: Clean UI, category: 'Web Design', thumbnail: 'work-3'}
+- {name: Clean UI, category: 'Web-Design', thumbnail: 'work-3'}
 - {name: Relistic mock-up, category: 'Print', thumbnail: 'work-4'}
 - {name: Londoner, category: 'Media', thumbnail: 'work-5'}
 - {name: Paper bag, category: 'Branding', thumbnail: 'work-6'}
 - {name: Ceramic bottle, category: 'Branding', thumbnail: 'work-7'}
-- {name: Cool shirt, category: 'Brandning', thumbnail: 'work-8'}
+- {name: Cool shirt, category: 'Branding', thumbnail: 'work-8'}
 
 #Services
 services:

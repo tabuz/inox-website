@@ -4,7 +4,20 @@ $(document).ready(function(){
 
   $('.navbar-toggle').on('click', function () {
     $('.collapse').collapse('toggle');
+});
 
+$(".work-list li").on('click', function(){
+  var category = $(this).text();
+
+  $('.work-list li').removeClass('active');
+  $(this).toggleClass('active');
+
+  if(category == 'All'){
+    $(".work-unit").show();
+  }else{
+    $('.work-unit').hide();
+    $('.work-unit').filter('.'+category).show();
+  }
 });
 
 $('.work-unit').on('click', function () {
