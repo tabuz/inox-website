@@ -1,3 +1,7 @@
+#map
+  height: 350px
+  margin: 0 0 100px 0
+
 .contact-header
   text-align: left
   max-width: 720px
@@ -50,6 +54,24 @@
       textarea
         height: 15em
 
+      input[type=submit]
+        margin: 30px 0 30px 0
+        font-size: 12px
+        text-transform: uppercase
+        float: right
+        width: auto
+        padding: 15px 25px
+        background: $accent
+        color: white
+        transition: 300ms
+        +clearfix
+
+        &:hover
+          background: white
+          color: $accent
+
+
+
   .contact-details
     max-width: 300px
 
@@ -101,15 +123,15 @@
 
     .contact-form
       margin: 0
-      form
 
-        input, textarea
+      form
+        +clearfix
 
         input
+          margin: 0 0 10px 0
 
-        .input-subject
-
-        textarea
+        input[type=submit]
+          margin: 10px 0 30px 0
 
     .contact-details
       margin: 0 auto

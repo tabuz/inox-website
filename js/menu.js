@@ -42,7 +42,5 @@ $(window).scroll(function(){
        lastId = id;
        // Ustaw lub usun "active" - odpowiada za podświetlenie pozycji w menu
        menuItems.parent().removeClass("active").end().filter("[href=#"+id+"]").parent().addClass("active");
-       console.log(menuItems)
-
    }
 });
